@@ -62,7 +62,7 @@ $$
 
   - 2b. (6 pts) What does this function do, in your own words?  
 
-.  
+.  This function just returns the nth value in the fibonacci sequence.
 .  
 .  
 .  

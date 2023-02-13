@@ -2,7 +2,7 @@
 
 # CMPS 2200 Assignment 1
 
-**Name:**_________________________
+**Name:** Josh McCoy
 
 
 In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository. 
@@ -12,35 +12,35 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. (2 pts ea) **Asymptotic notation** (12 pts)
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  
+.  Yes. This is because when you remove the constants it becomes 2^n which is o(2^n)
 .  
 .  
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
-.  
+.  No because constants will not increase the speed. Therefore, there is no constant that can be multiplied that will asymptotically dominate 2^(2^n)
 .  
 .  
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
-.  
+.  This is similiar to question 1b. There is no constant that can be multiplied by log2(n) that will dominate n^1.01
 .  
 .  
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.  
+.  Yes because n^1.01 for every consant will dominate log^2n for every constant. 
 .  
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
-.  
+.  No because a constant doesn't exist that would multiplied by logn^3 that could dominate sqrt(n)
 .  
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
-.  
+.  Yes because of omega. There is a costant that can be multiplied by sqrt(n) that will dominate log(n)^3
 
 
 2. **SPARC to Python** (12 pts)

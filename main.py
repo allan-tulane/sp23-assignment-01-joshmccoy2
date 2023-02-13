@@ -5,7 +5,15 @@ See assignment-01.pdf for details.
 # no imports needed.
 
 def foo(x):
-    ### TODO
+    \begin{array}{l}
+\mathit{foo} x =   \\
+    \texttt{if}{} x \le 1 \texttt{then}{}\\
+        x\\
+    \texttt{else}\\
+        \texttt{let}{} (ra, rb) = (\mathit{foo}~(x-1)) , (\mathit{foo} (x-2)) \texttt{in}{}\\
+            ra + rb\\
+        \texttt{end}{}.\\
+\end{array}
     pass
 
 def longest_run(mylist, key):

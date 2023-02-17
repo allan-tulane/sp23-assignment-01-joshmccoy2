@@ -30,7 +30,16 @@ class Result:
     
     
 def longest_run_recursive(mylist, key):
-    ### TODO
+    if len(mylist) == 1:
+        if myist[0] == key:
+            return Result(1, 1, 1, True)
+        else:
+            return Result(0, 0, 0, False)
+    else:
+        size = len(mylist) // 2
+        left = longest_run_recursive(mylist[:size], key)
+        right = longest_run_recursive(mylist[size:],key)
+        return combine_result(left, right)
     pass
 
 ## Feel free to add your own tests here.

@@ -92,8 +92,9 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3b. (4 pts) What is the Work and Span of this implementation?  
 
-.  
-.  
+.  The work is o(n) because it will iterate through the list once. 
+
+.  The span is also o(n) because it is not parallelized.
 .  
 .  
 .  
@@ -107,14 +108,14 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3d. (4 pts) What is the Work and Span of this sequential algorithm?  
 .  
+.  work(n) = 2w(n/2) + c1
+.  root = c1
+.  level 1 = c1 + c1 + c1 = 2 * c1
+.  Therefore, it is leaf dominated. 
 .  
 .  
-.  
-.  
-.  
-.  
-.  
-.  
+.  The work will be o(n*lgn)
+.  The span will be the same because it is not parallelized.
 .  
 .  
 
@@ -122,11 +123,11 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
   - 3e. (4 pts) Assume that we parallelize in a similar way we did with `sum_list_recursive`. That is, each recursive call spawns a new thread. What is the Work and Span of this algorithm?  
 
 .  
+.  The work will remain the same. 
 .  
+.  n = s(n/2) + c1
+.  root = c1 
+.  level 1 = c1
+.  Balanced 
 .  
-.  
-.  
-.  
-.  
-.  
-
+Therefore, the span is O(lgn)
